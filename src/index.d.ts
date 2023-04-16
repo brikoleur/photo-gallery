@@ -4,6 +4,7 @@ declare type GalleryImage = {
     thumbnail : string;
     title : string;
     description : string;
+    ctime : string;
 }
 declare type Gallery = {
     id : string;
