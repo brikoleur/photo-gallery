@@ -3,9 +3,8 @@
 </template>
 
 <script setup lang="ts">
-import PMosaic from "@/components/gallery/PMosaic.vue";
 import { useRoute } from "vue-router";
-import useGallery, { Gallery, GalleryImage } from "@/composables/useGallery";
+import { useGallery } from "photo-gallery-components";
 import { ref, watch } from "vue";
 const route = useRoute();
 const { allGalleries, isInitialized } = useGallery();
