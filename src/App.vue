@@ -2,8 +2,8 @@
   <v-app>
     <v-main class="p-background">
       <v-sheet v-if="currentGallery" :max-width="1800" :height="275" class="mx-auto" color="transparent">
-        <v-img cover :src="getImagePath( currentGallery.titleImage, false )"/>
-        <div v-if="currentGallery" class="gallery-text text-white mx-auto pa-4 pt-6 pl-8" style="max-width:1800px">
+        <v-img cover :src="getImagePath( currentGallery.titleImage, false )" class="album-title-image"/>
+        <div class="gallery-text text-white mx-auto pa-4 pt-6 pl-8" style="max-width:1800px">
           <div class="text-h6">{{ currentGallery.title }}</div>
           <div class="text-body-2">{{ currentGallery.description }}</div>
           <div style="position:absolute;bottom:20px;right:20px">
@@ -128,5 +128,10 @@ onBeforeMount( async() =>
     box-sizing: border-box;
     background: linear-gradient(0deg, rgba(0, 0, 0, 75%) 0%, rgba(0, 0, 0, 0) 100%);
 }
+
+.album-title-image {
+    filter: blur(3px)
+}
+
 
 </style>
