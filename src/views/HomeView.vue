@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import { useGallery } from "photo-gallery-components";
-import type { GalleryImage } from "@/index";
+import { GalleryImage } from "photo-gallery-components";
 const { allImages } = useGallery();
 allImages.value.sort( ( a: GalleryImage, b: GalleryImage ) => new Date( a.ctime ).getTime() - new Date( b.ctime ).getTime() )
 </script>
