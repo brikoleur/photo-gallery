@@ -52,7 +52,7 @@
             <v-btn to="/editor" v-if="isDev">Editor</v-btn>
           </v-toolbar-items>
           <v-spacer/>
-          <div class="pt-2">
+          <div style="padding-top:6px;margin-right:8px;">
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
               <img alt="This work is licensed under a Creative Commons Attribution 4.0 International License"
                    style="border-width:0"
@@ -67,7 +67,7 @@
             </v-btn>
           </v-toolbar-items>
           <v-spacer/>
-          <div class="pt-2">
+          <div style="padding-top:6px;margin-right:8px;">
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
               <img alt="This work is licensed under a Creative Commons Attribution 4.0 International License"
                    style="border-width:0"
